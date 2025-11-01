@@ -1,0 +1,30 @@
+[
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "age": 29,
+      "isActive": true,
+      "address": {
+        "street": "123 Main St",
+        "city": "Springfield",
+        "state": "IL",
+        "postalCode": "62704"
+      },
+      "hobbies": ["reading", "traveling", "gaming"]
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "age": 34,
+      "isActive": false,
+      "address": {
+        "street": "456 Elm St",
+        "city": "Metropolis",
+        "state": "NY",
+        "postalCode": "10001"
+      },
+      "hobbies": ["cooking", "cycling", "photography"]
+    }
+  ]
