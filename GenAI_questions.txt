@@ -1,0 +1,33 @@
+==> embedding models used in RAG?
+Answer : OpenAI embeddings (text-embedding-3-large)
+	 Ollama embeddings (gemma:2b)
+	 HuggingFace models (sentence-transformers)
+
+==> when to use faiss-cpu and faiss-gpu for FAISS vector store DB?
+Answer : faiss-cpu, Use when:
+		a) You are working locally or on a small dataset (thousands to a few million vectors).
+		b) You don’t have a GPU available.
+		c) Quick prototyping or testing.
+		d) Memory and compute requirements are moderate.
+
+		Pros:
+		  a) Easy to install (pip install faiss-cpu).
+		  b) Works on any machine without CUDA.
+
+		Cons:
+		  a) Slower for very large datasets or high-dimensional vectors.
+
+
+	faiss-gpu, Use when:
+		a) You are working with large datasets (millions to billions of vectors).
+		b) High-dimensional embeddings (e.g., 1536+ dimensions).
+		c) Need fast search and indexing performance.
+		d) You have access to a CUDA-enabled GPU.
+
+		Pros:
+		  a) Significantly faster search and training for large-scale data.
+		  b) Supports GPU parallelism for large vector indices.
+
+		Cons:
+		  a) Requires CUDA drivers and a compatible GPU.
+		  b) Installation is slightly more complex.
